@@ -5,7 +5,7 @@
 
 <petclinic:layout pageName="home">
     <h2><fmt:message key="welcome"/></h2>
-	<h2>hi team</h2>
+	<h2>Hello WBG team</h2>
     <div class="row">
         <div class="col-md-12">
 		
