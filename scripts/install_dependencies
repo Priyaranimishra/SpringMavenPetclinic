@@ -14,6 +14,7 @@ if [ -d $CATALINA_HOME ]; then
 fi
 mkdir -p $CATALINA_HOME
 apt-get update
+apt-get -y upgrade
 sudo apt-get install -y openjdk-8-jdk
 export JAVA_HOME=/usr/lib/jvm/java-8-oracle
 export PATH=${PATH}:${JAVA_HOME}/bin
