@@ -1,4 +1,4 @@
 #!/bin/bash
 set -e
-export CATALINA_HOME=/opt/tomcat/apache-tomcat-8.5.16
+export CATALINA_HOME=/opt/tomcat/apache-tomcat-8.0.47
 $CATALINA_HOME/bin/shutdown.sh

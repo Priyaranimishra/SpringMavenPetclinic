@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-CATALINA_HOME='/opt/tomcat/apache-tomcat-8.5.16'
+CATALINA_HOME='/opt/tomcat/apache-tomcat-8.0.47'
 DEPLOY_TO_ROOT='true'
 #CONTEXT_PATH='##CONTEXT_PATH##'
 SERVER_HTTP_PORT='80'
@@ -25,5 +25,5 @@ cp $WAR_STAGED_LOCATION $CATALINA_HOME/webapps/$CONTEXT_PATH.war
 { which xsltproc; } || { apt-get install -y xsltproc; }
 cp $CATALINA_HOME/conf/server.xml $CATALINA_HOME/conf/server.xml.bak
 xsltproc $HTTP_PORT_CONFIG_XSL_LOCATION $CATALINA_HOME/conf/server.xml.bak > $CATALINA_HOME/conf/server.xml
-export CATALINA_HOME=/opt/tomcat/apache-tomcat-8.5.16
+export CATALINA_HOME=/opt/tomcat/apache-tomcat-8.0.47
 $CATALINA_HOME/bin/startup.sh
