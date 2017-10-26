@@ -7,7 +7,7 @@
 <%@ taglib prefix="petclinic" tagdir="/WEB-INF/tags" %>
 
 <petclinic:layout pageName="owners">
-    <h2>Owners</h2>
+    <h2>Customers</h2>
 
     <datatables:table id="owners" data="${selections}" row="owner"
                       cssClass="table table-striped" pageable="false" info="false" export="pdf">
@@ -23,7 +23,7 @@
         <datatables:column title="Address" property="address" cssStyle="width: 200px;"/>
         <datatables:column title="City" property="city"/>
         <datatables:column title="Telephone" property="telephone"/>
-        <datatables:column title="Pets" cssStyle="width: 100px;">
+        <datatables:column title="Appointment" cssStyle="width: 100px;">
             <c:forEach var="pet" items="${owner.pets}">
                 <c:out value="${pet.name}"/>
             </c:forEach>

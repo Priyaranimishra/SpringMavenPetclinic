@@ -6,7 +6,7 @@
 <%@ taglib prefix="petclinic" tagdir="/WEB-INF/tags" %>
 
 <petclinic:layout pageName="vets">
-    <h2>Veterinarians</h2>
+    <h2>Financial Advisors</h2>
 
     <datatables:table id="vets" data="${vets.vetList}" row="vet" cssClass="table table-striped"
                       pageable="false" info="false">

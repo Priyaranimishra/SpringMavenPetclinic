@@ -23,9 +23,9 @@
             <thead>
             <tr>
                 <th>Name</th>
-                <th>Birth Date</th>
+                <th>Appointment Date</th>
                 <th>Type</th>
-                <th>Owner</th>
+                <th>Customer</th>
             </tr>
             </thead>
             <tr>
